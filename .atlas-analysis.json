@@ -1,0 +1,57 @@
+{
+  "projectType": "general",
+  "projectName": "Minimal FlashCard Python",
+  "projectDescription": "A web application that converts PDF documents into AI-generated flashcards using Google's Gemini API",
+  "theme": "almond",
+  "primaryColor": "#6366f1",
+  "lightColor": "#8b5cf6",
+  "darkColor": "#4f46e5",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "installation"
+        ]
+      },
+      {
+        "group": "Usage Guide",
+        "pages": [
+          "guides/api-setup",
+          "guides/uploading-pdfs",
+          "guides/generating-flashcards"
+        ]
+      },
+      {
+        "group": "API Reference",
+        "pages": [
+          "api/endpoints",
+          "api/request-response"
+        ]
+      },
+      {
+        "group": "Development",
+        "pages": [
+          "development/setup",
+          "development/environment-variables",
+          "development/architecture"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "PDF text extraction using PyPDF2",
+    "AI-powered flashcard generation with Gemini 2.5 Flash Lite",
+    "Clean web interface with file upload",
+    "Local API key storage in browser",
+    "FastAPI backend with async support"
+  ],
+  "publicApiSurface": [
+    "GET / - Serve the main HTML interface",
+    "POST /upload - Upload PDF and generate flashcards",
+    "ChatGoogleGenerativeAI - LangChain Gemini integration",
+    "PyPDF2.PdfReader - PDF text extraction"
+  ]
+}
